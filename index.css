@@ -87,6 +87,10 @@ body {
   font-size: 48px;
 }
 
+.invisible{
+  display: none;
+}
+
 .cards {
   width: 100%;
 }
@@ -99,6 +103,10 @@ body {
   box-shadow: 0 1px 6px -2px #000;
   background-color: #FFF;
   margin-bottom: 30px;
+}
+
+.card button{
+  margin-right: 20px;
 }
 
 .card img {
