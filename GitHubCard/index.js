@@ -85,9 +85,9 @@ const followersArray = [];
       </div>
     </div>
 */
-function createCard(cardURL){
+function createCard(gitName){
   let gitData = null
-  axios.get(cardURL)
+  axios.get(`https://api.github.com/users/${gitName}`)
     .then(obj => {
       gitData = obj.data
       let card = document.createElement('div')
@@ -163,5 +163,5 @@ const names = [
   'bigknell',
 ]
 for (let i = 0; i < names.length; i++){
-  createCard(`https://api.github.com/users/${names[i]}`)
+  createCard(names[i])
 }
